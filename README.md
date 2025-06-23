@@ -1,111 +1,51 @@
-LLM Battle Arena
-
-A Streamlit-based web application to compare the performance of multiple Large Language Models (LLMs) in fact-checking tasks across different audiences, temperatures, and judges. The application allows users to run battles between models, evaluate their responses, and visualize results to determine the best model for specific scenarios.
-
-Features
-
-
-
-
-
-Model Comparison: Pit two LLMs against each other (e.g., Mistral-7B, Llama-3-70B) to evaluate their fact-checking abilities.
-
-
-
-Flexible Configurations: Customize battles by selecting:
-
-
-
-
-
-Statements from a predefined fact database or custom inputs.
-
-
-
-Audiences (Kid, Teenager, Adult).
-
-
-
-Temperature settings (Low: 0.3, Mid: 0.7, High: 1.0).
-
-
-
-Judge models to evaluate responses.
-
-
-
-Fact categories (e.g., Science, Nature, Health).
-
-
-
-Multiple Run Modes:
-
-
-
-
-
-Single battle for a specific statement.
-
-
-
-Run all statements in selected categories.
-
-
-
-Run all possible combinations of models, judges, statements, audiences, and temperatures.
-
-
-
-Evaluation Metrics:
-
-
-
-
-
-Correctness of responses (True/False).
-
-
-
-Quality of explanations (1-5 scale).
-
-
-
-Justification provided (Yes/No).
-
-
-
-Language appropriateness and neutral tone.
-
-
-
-Visualizations: Interactive charts (bar, radar) to compare model performance.
-
-
-
-Export Options: Download results and summaries as CSV files.
-
-
-
-Debugging Support: Detailed logging to diagnose API or evaluation issues.
-
-Prerequisites
-
-
-
-
-
-Python 3.8+
-
-
-
-Together AI API Key: Required for accessing LLM inference endpoints.
-
-
-
-Dependencies:
-
-
-
-
-
-Install required Python packages listed in requirements.txt.
+# 🤖 LLM Battle Arena
+
+**LLM Battle Arena** is a Streamlit-based web application that lets you pit multiple Large Language Models (LLMs) against each other in fact-checking tasks.  
+It supports diverse audiences, temperature settings, judges, and categories. You can compare model responses, visualize performance, and export results for further analysis.
+
+---
+
+## 🚀 Features
+
+- **Model Comparison:**  
+  - Battle any two LLMs (e.g., Mistral-7B, Llama-3-70B, DeepSeek-67B) and objectively compare their fact-checking abilities.
+- **Flexible Configurations:**  
+  - Choose from a predefined fact database or input your own statements.
+  - Select the audience: Kid, Teenager, or Adult.
+  - Tune the temperature: Low (0.3), Mid (0.7), or High (1.0).
+  - Pick a judge LLM to evaluate the responses.
+  - Filter by fact category (Science, Nature, Health, etc.).
+- **Multiple Run Modes:**  
+  - Single battle: Test one statement between two models.
+  - Category batch: Run all facts in selected categories.
+  - Full combinatorial: Test all possible model, judge, statement, audience, and temperature combinations.
+- **Evaluation Metrics:**  
+  - Correctness of response (True/False).
+  - Quality of explanation (scale 1–5).
+  - Justification provided (Yes/No).
+  - Language appropriateness and tone neutrality.
+- **Visualizations:**  
+  - Interactive bar, radar, and line charts to analyze and compare results.
+- **Export Options:**  
+  - Download results and summary tables as CSV files.
+- **Debugging Support:**  
+  - Detailed logging to diagnose API or evaluation issues.
+
+---
+
+## 🧰 Prerequisites
+
+- **Python 3.8+**
+- **Together AI API Key:**  
+  - Required to access LLM inference endpoints.
+  - [Get your API key here](https://platform.together.xyz/)
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository (or copy the code):**
+
+   ```bash
+   git clone <your-repo-url>
+   cd <project-folder>
